@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage{amsmath}       % new
+
+
+\begin{document}
+\title{Typesetting Mathematics in \LaTeX}
+\author{Abel Huanca \\ abel.huanca@upeu.edu.pe}
+\maketitle
+
+
+\section{Introducción} 
+\LaTeX\ es extremadamente poderoso cuando se trata de composición matemática. Es uno de los puntos fuertes de este sistema. 
+
+\section{Viendo matemáticas}
+Hay dos formas de mostrar las matemáticas. Uno es  \emph{inline} y el otro es formato \emph{display} format -- en el que toda la matemática se encuentra en su propio conjunto de líneas.
+
+
+\subsection{Modo Inline}
+Vamos a insertar una ecuación matemática en línea aquí usando un par de signos \$ signs:    . AsComo puede ver, la pantalla (como el espaciado de línea) no se ve afectada por las matemáticas como lo hace con los softwares de procesamiento de texto.
+
+\subsection{Modo Display}
+También podemos mostrar ecuaciones en su propio conjunto de líneas. Para hacer esto, podemos usar el entorno de ecuaciones.
+
+%\begin{equation}\label{eq:emc}
+%
+%\end{equation}
+
+Como puedes ver, \LaTeX\ inserta el número de ecuación automáticamente. Podemos referirnos a él usando el \verb|\ref| comando tal como nos referimos a secciones, figuras y tablas. (Por ejemplo, ecuación~\ref{eq:emc}.) Para deshacerse del número de ecuación, simplemente use  \emph{star variant} del entorno de la ecuación. (Para esto, necesitas el paquete \texttt{amsmath}.)
+
+%\begin{equation*}
+%
+%\end{equation*}
+
+Alternativamente, podemos usar las teclas abreviadas \verb|\[| y \verb|\]|
+
+
+
+\section{Características Matemáticas}
+\LaTeX\ tiene muchas características integradas y puede obtener muchas más fácilmente. Aquí, veremos algunas de estas características:
+
+Suma, resta, multiplicación y división:
+
+
+Superíndices y subíndices:
+
+
+
+Suma, unión, intersección, unión grande, integrales:
+
+
+
+Fracciones, corchetes, raíz cuadrada:
+
+
+Letras griegas:
+
+
+
+Matrices y vectores. Para esto, debe incluir el paquete \texttt {amsmath} y luego usar el entorno \texttt {bmatrix} o \texttt {pmatrix}:
+
+
+Acentos:
+
+
+
+Vea el menú \texttt {Math} en el IDE para otras operaciones. Puede consultar la `` Guía breve de matemáticas para \LaTeX '' para obtener muchos más ejemplos. 
+
+\section{Usando Símbolos} 
+Es posible que encuentre situaciones en las que necesite encontrar nuevos símbolos. Para esto, puede consultar la `` Lista completa de símbolos \LaTeX ''.
+
+
+
+
+
+
+(Opcional) Dado que este es un comando largo, es posible que deseemos crear un acceso directo usando \verb| \newcommand | comando en el preámbulo. Esto también nos permite cambiar más tarde el símbolo sin tener que cambiar las ecuaciones.
+
+
+\end{document}
