@@ -1,6 +1,11 @@
 \documentclass{article}
 \usepackage{amsmath}       % new
+\usepackage{latexsym}        % new
+\usepackage{amssymb}	  % new
 
+
+\newcommand{\flowsinfo}{\leftrightsquigarrow}
+\newcommand{\tpme}{TPM$_e$}
 
 \begin{document}
 	\title{Typesetting Mathematics in \LaTeX}
@@ -115,11 +120,14 @@
 	\section{Usando Símbolos} 
 	Es posible que encuentre situaciones en las que necesite encontrar nuevos símbolos. Para esto, puede consultar la `` Lista completa de símbolos \LaTeX ''.
 	
-	
-	
-	
-	
+	\[
+	x  \rightleftharpoons y \\
+	x  \flowsinfo y \flowsinfo x \flowsinfo v
+	\]
+		
 	(Opcional) Dado que este es un comando largo, es posible que deseemos crear un acceso directo usando \verb| \newcommand | comando en el preámbulo. Esto también nos permite cambiar más tarde el símbolo sin tener que cambiar las ecuaciones.
+	
+	Esto es \tpme
 	
 	
 \end{document}
