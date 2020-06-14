@@ -1,9 +1,10 @@
 \documentclass{article}
 \usepackage{algorithm}
 \usepackage{algorithmic}
+\usepackage[spanish]{babel}
 
 \begin{document}
-\title{Algorithms in \LaTeX}
+\title{Agoritmos en \LaTeX}
 \author{Nauman \\ recluze@gmail.com}
 \maketitle
 
@@ -11,8 +12,8 @@
 
 \begin{algorithm}
 \begin{algorithmic}
-\REQUIRE{inputs to the algo}
-\ENSURE{outputs generated}
+\REQUIRE{entradas de algo}
+\ENSURE{salidas generadas}
 
 \STATE x=2;
 \IF{i $\to$ 2}
@@ -21,10 +22,10 @@
    \RETURN 
 \ENDIF
 \end{algorithmic}
-\caption{My First Simple Algorithm}
+\caption{Mi Primer Algoritmo Simple}
 \label{algo:first}
 \end{algorithm}
 
-%And of course, we can refer to the algorithm using \verb|\ref|: See Algorithm~\ref{algo:first} but the good thing is we can also refer to a specific line e.g. Line~\ref{line:impline} or Line~\ref{line:mostimp}.
+Y, por supuesto, podemos referirnos al algoritmo usando \verb|\ref|: Ver Algoritmo~\ref{algo:first} pero lo bueno es que también podemos referirnos a una línea específica, p. Línea~\ref{line:impline} o Línea~\ref{line:mostimp}.
 
 \end{document}
