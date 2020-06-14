@@ -17,9 +17,10 @@
 
 \STATE x=2;
 \IF{i $\to$ 2}
-   \STATE x++;
+   \STATE y--;
+   \STATE x++;		\label{line:impline}
 \ELSE
-   \RETURN 
+   \RETURN x		\label{line:mostimp}
 \ENDIF
 \end{algorithmic}
 \caption{Mi Primer Algoritmo Simple}
