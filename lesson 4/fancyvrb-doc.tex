@@ -1,5 +1,5 @@
 \documentclass{article}
-%\usepackage{fancyvrb}
+\usepackage{fancyvrb}
 \usepackage[spanish]{babel}
 
 
@@ -8,12 +8,14 @@
 \author{Abel Huanca \\ abel.huanca@upeu.edu.pe}
 \maketitle
 
-
+\begin{Verbatim}[frame=single, label=Some Label, numbers=left, commandchars=\\\{\}]
 Primera línea verbatim. 
-Segunda línea verbatim. 
+Segunda línea verbatim.  \label{line:impline}
 Y muchos más
+\end{Verbatim}
 
 
-%Y podemos referirnos a líneas como con el paquete algorítmico: Line~\ref{line: impline}.
+
+Y podemos referirnos a líneas como con el paquete algorítmico: Line~\ref{line:impline}.
 
 \end{document}
