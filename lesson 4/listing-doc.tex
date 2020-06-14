@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{listings}
 
 \begin{document}
 \title{Listings Example}
@@ -8,8 +9,15 @@
 
 
 
-% And we can refer to Listing~\ref{lst:lowertri} in text.
+% Y podemos referirnos al Listado~\ref{lst:lowertri} en el texto.
 
-
+\lstset{language=c++}
+\lstset{caption=Some Code}
+\begin{lstlisting}[frame=single, basicstyle=\ttfamily]{}
+for (i=0; i < 10; i++){
+// incrementa al puntero
+*p++ = i;
+}
+\end{lstlisting}
 
 \end{document}
